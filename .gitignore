@@ -160,3 +160,60 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# Databricks specific files
+.databricks/
+.databricks-connect/
+databricks.cfg
+**/databricks.cfg
+databricks-cli.json
+**/databricks-cli.json
+
+# Databricks Repos
+.databricks/
+.databricks-connect/
+
+# Databricks notebooks checkpoints
+.ipynb_checkpoints/
+
+# Databricks Connect
+databricks-connect/
+**/databricks-connect/
+
+# Databricks CLI configuration
+.databrickscfg
+databricks-cli/
+
+# Databricks SQL Warehouse connection files
+*.sql.log
+
+# Databricks Asset Bundles
+.bundle/
+bundle.tf
+bundle.yml
+.bundle.yml
+
+# Databricks temporary files
+.tmp/
+tmp/
+.databricks-tmp/
+
+# Databricks logs
+databricks-*.log
+databricks.log
+
+# MLflow tracking
+mlruns/
+mlartifacts/
+
+# Delta Lake
+_delta_log/
+*.delta
+
+# Spark temporary files
+spark-warehouse/
+metastore_db/
+derby.log
+
+# Parquet files (optional - uncomment if you don't want to track large data files)
+# *.parquet
